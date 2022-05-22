@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: #f8f8f8;
+    background-size: cover;
+    background-position: right;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 2.5em;
+    color: #143774;
+    font-weight: 500;
+    line-height: 2em;
+}
+.banner h2 span{
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.banner h3{
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #143774;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: #1792d2;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.btn:hover{
+    background: #143774;
+    color: #f8f8f8;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: #143774;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+    color: #143774;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #fff;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #143774;
+    text-decoration: none;
+}
+header ul li a:hover{
+    border-bottom: 2px #1792d2;
+}
+header.sticky ul li a{
+    color: #fff;
+}
+.about{
+    background: #1792d2;
+    color: #f8f8f8;
+}
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+}
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+    color: #143774;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx{
+    padding-right: 30px;
+}
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50{
+    min-width: 50%;
+}
+img{
+    max-width: 100%;
+}
+
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.container .serviceBox{
+    position: relative;
+    width: 350px;
+    height: 250px;
+    background: #1792d2;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+}
+.container .serviceBox .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #143774;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox:hover .icon{
+    top: 30px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+.container .serviceBox .icon /*ion.icon*/ {
+    font-size: 5em;
+    color: #fff;
+    transition: 0.5s;
+}
+.container .serviceBox:hover .icon /*ion.icon*/{
+    font-size: 2em;
+}
+.container .serviceBox .contents{
+    position: relative;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.container .serviceBox:hover .contents{
+    transform: scale(1);
+    transition-delay: 0s;
+}
+.container .serviceBox .contents h2{
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.container .serviceBox .contents p{
+    font-weight: 100;
+    line-height: 1em;
+    text-align: justify;
+}
+.scroll-button{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 45px;
+    background: #143774;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s eas;
+}
+.scroll-button:hover{
+    background: #f8f8f8;
+    color: #143774;
+    transition: .5s;
+}
