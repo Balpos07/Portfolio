@@ -35,6 +35,11 @@ section{
     color: #143774;
     font-weight: 500;
 }
+.banner h3 .auto-input{
+    color: #1792d2;
+    font-weight: 700;
+}
+
 .btn{
     position: relative;
     background: #1792d2;
@@ -52,6 +57,8 @@ section{
     background: #143774;
     color: #f8f8f8;
 }
+/*header styling section*/
+
 header{
     position: fixed;
     top: 0;
@@ -94,9 +101,7 @@ header ul li a{
     margin: 0 15px;
     color: #143774;
     text-decoration: none;
-}
-header ul li a:hover{
-    border-bottom: 2px #1792d2;
+    transition: 0.3s ease;
 }
 header.sticky ul li a{
     color: #fff;
