@@ -20,13 +20,13 @@ section{
     align-items: center;
 }
 .banner h2{
-    font-size: 2.5em;
+    font-size: 2em;
     color: #143774;
     font-weight: 500;
     line-height: 2em;
 }
 .banner h2 span{
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
 }
 .banner h3{
