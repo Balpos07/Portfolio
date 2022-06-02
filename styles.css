@@ -333,6 +333,7 @@ img{
     header,
     header.sticky{
         padding: 20px 50px;
+        z-index: 1000;
     }
     .menu{
         position: fixed;
@@ -365,7 +366,7 @@ img{
         background-size: 30px;
         cursor: pointer;
     }
-    .toggle.active{
+    .toggle .active{
         background: url(close\ icon.png);
         background-position: center;
         background-repeat: no-repeat;
@@ -374,5 +375,45 @@ img{
     }
     header .sticky .toggle{
         filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentBx h3{
+        font-size: 24px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .w50{
+        margin-bottom: 20px;
+        margin-top: 50px;
+    }
+    .container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .serviceBox{
+        margin: 10px;
+    }
+    .contactInfo{
+        margin: 20px 0;
     }
 }
