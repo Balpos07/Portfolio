@@ -16,8 +16,8 @@
     <ion-icon name="logo-web-component" class="scroll-button"></ion-icon>
     <header>
         <a href="#" class="logo">WrestleA</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
+        <div class="toggle active" onclick="toggleMenu();"></div>
+        <ul class="menu active">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services ">Our Services</a></li>
@@ -217,7 +217,9 @@
 
         function toogleMenu(){
             var menuToggle = document.querySelector('.toggle');
-            menuToggle.classList.toggle('acitve')
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('acitve');
+            menu.classList.toggle('active'); 
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
