@@ -16,7 +16,7 @@
     <ion-icon name="logo-web-component" class="scroll-button"></ion-icon>
     <header>
         <a href="#" class="logo">WrestleA</a>
-        <div class="toggle"></div>
+        <div class="toggle" onclick="toggleMenu();"></div>
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -213,7 +213,12 @@
         window.addEventListener('scroll', function () {
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
-        })
+        });
+
+        function toogleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            menuToggle.classList.toggle('acitve')
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>

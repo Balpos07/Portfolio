@@ -341,7 +341,7 @@ img{
         display: block;
         padding: 100px 50px;
         text-align: center;
-        width: 100%;
+        width: 100%; 
         height: 100vh;
         background: #fff;
         transition: 0.5s;
@@ -350,5 +350,21 @@ img{
     }
     header ul li a{
         color: #143774;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(menu\ bar.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url();
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
     }
 }
