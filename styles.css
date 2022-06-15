@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -25,22 +25,28 @@ section{
     color: #143774;
     font-weight: 500;
     line-height: 2em;
+    animation-delay: 0.5s;
 }
 .banner h2 span{
     font-size: 2em;
     font-weight: 700;
+    animation-delay: 1s;
 }
 .banner h3{
     margin-top: 10px;
     font-size: 1.5em;
     color: #143774;
     font-weight: 500;
+    animation-delay: 1.5s;
 }
 .banner h3 .auto-input{
     color: #1792d2;
     font-weight: 700;
 }
-
+.text-input{
+    color: #143774;
+    font-weight: 700;
+}
 .btn{
     position: relative;
     background: #1792d2;
@@ -53,11 +59,13 @@ section{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    animation-delay: 2s;
 }
 .btn:hover{
     background: #143774;
     color: #f8f8f8;
 }
+
 /*header styling section*/
 
 header{
@@ -136,11 +144,11 @@ header.sticky ul li a{
 .w50{
     min-width: 50%;
 }
-img{
+.w50 img{
     max-width: 100%;
 }
 
-
+/*service styling*/
 .boxes{
     display: flex;
     justify-content: center;
@@ -150,7 +158,8 @@ img{
 
 .container{
     position: relative;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,8 +168,8 @@ img{
 }
 .container .serviceBox{
     position: relative;
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 350px;
     background: #1792d2;
     border-radius: 20px;
     overflow: hidden;
@@ -238,6 +247,36 @@ img{
     background: #f8f8f8;
     color: #143774;
     transition: .5s;
+}
+
+/*work-showcase styling*/
+.testimonials{
+    width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.work-showcase{
+   background: #1792d2;
+   border-radius: 10px;
+   padding: 30px;
+   margin-bottom: 10px;
+}
+.one{
+    grid-column: 1/3;
+}
+.four{
+    grid-column: 2/4;
+    grid-row: 2;
+}
+.five{
+    grid-column: 4;
+    grid-row: 1/3;
+}
+.work-showcase img{
+    object-fit: contain;
 }
 
 /*contact styling*/
@@ -325,6 +364,19 @@ img{
     padding: 10px;
 }
 
+/*Animation*/
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
 
 
 /*Responsiveness*/
@@ -408,11 +460,14 @@ img{
     }
     .container{
         flex-direction: column;
-        width: 100%;
+        width: fit-content;
     }
-    .serviceBox{
+    .container .serviceBox {
+        width: fit-content;
+    }
+   /*  .serviceBox{
         margin: 10px;
-    }
+    } */
     .contactInfo{
         margin: 20px 0;
     }

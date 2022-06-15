@@ -27,9 +27,9 @@
     </header>
     <section class="banner">
         <div class="textBx">
-            <h2>Give New Energy to Brand, Products, <br> <span>Through Inventive and Active Solution</span></h2>
-            <h3>We specialise on <span class="auto-input"></span>.</h3>
-            <a href="" class="btn">About Us</a>
+            <h2 class="anim">Give New Energy to Brand, Products, <br> <span class="anim">Through Inventive and Active Solution</span></h2>
+            <h3 class="anim">We specialise on <span class="auto-input"></span>.</h3>
+            <a href="" class="btn anim">About Us</a>
         </div>
     </section>
     <section class="about" id="about">
@@ -38,7 +38,7 @@
         </div>
         <div class="content">
             <div class="contentBx">
-                <h3>I'm a Front End Web Developer.</h3>
+                <h3>We specialise on <span class="text-input"></span>.</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa, veniam? Est quaerat consectetur
                     recusandae pariatur atque incidunt nulla dolorum dicta, ipsam, doloribus voluptatibus, architecto ut
                     distinctio expedita placeat magni sequi perferendis eligendi vitae corporis inventore et rerum. Sed
@@ -70,7 +70,7 @@
                     <!--copy the script code from ionicon under installation-->
                 </div>
                 <div class="contents">
-                    <h2>Design</h2>
+                    <h2>Web Development</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore voluptatum
                         necessitatibus mollitia laborum itaque?</p>
                 </div>
@@ -81,7 +81,7 @@
                     <ion-icon name="logo-html5"></ion-icon>
                 </div>
                 <div class="contents">
-                    <h2>Design</h2>
+                    <h2>UI & UX Design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore voluptatum
                         necessitatibus mollitia laborum itaque?</p>
                 </div>
@@ -92,7 +92,7 @@
                     <ion-icon name="logo-javascript"></ion-icon>
                 </div>
                 <div class="contents">
-                    <h2>Design</h2>
+                    <h2>Graphic Design</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore voluptatum
                         necessitatibus mollitia laborum itaque?</p>
                 </div>
@@ -134,22 +134,27 @@
     </section>
 
     <!--Works-->
-    <section>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas reprehenderit totam commodi, enim quisquam
-            animi. Eum dolore necessitatibus quisquam quaerat veritatis ipsum ducimus odit voluptate voluptatibus
-            consequuntur? Recusandae iste expedita sit ullam corporis provident, aliquid nobis animi quia ipsum quae
-            obcaecati fugit tenetur incidunt corrupti asperiores sapiente suscipit eos porro cumque. Quod laudantium
-            dignissimos quae expedita perspiciatis! Autem modi a temporibus ut ipsam, error quam atque accusamus
-            officia! Pariatur sed maxime odit earum est iusto, officiis quam, unde, soluta perspiciatis inventore porro
-            neque voluptatum totam tempora fugiat asperiores? Nulla nemo facere nihil voluptas eveniet culpa accusamus!
-            Quidem adipisci, deserunt ipsum provident, cum quaerat ipsam nulla repellendus rerum officia aliquam ad
-            nemo. Sequi vero praesentium possimus voluptate similique corporis dignissimos sunt laborum porro, ab,
-            reprehenderit recusandae nisi, quas doloremque ad eos vitae nam hic accusantium. Possimus eum nesciunt
-            beatae ab sapiente ullam odit labore nihil, neque maxime at officia architecto similique voluptatum,
-            exercitationem necessitatibus ut tenetur porro facilis odio nemo vero est. Tenetur, doloribus cupiditate
-            iste odit accusamus aliquid corrupti consequuntur repudiandae. Iusto ex, ipsa maiores repellendus distinctio
-            incidunt doloremque. Ab facilis, nisi eveniet dolores esse magni ad ipsa dolore ratione, modi aperiam
-            delectus repellendus cumque. Dolorum voluptates molestias in nesciunt.</p>
+    <section class="boxes2" id="services">
+        <div class="heading">
+            <h2 id="services-head">Our Services</h2>
+        </div>
+        <div class="testimonials">
+            <div class="work-showcase one">
+                <img src="male_pic2.jpg" alt="">
+            </div>
+            <div class="work-showcase two">
+                <img src="male_pic2.jpg" alt="">
+            </div>
+            <div class="work-showcase three">
+               <img src="male_pic2.jpg" alt="">
+            </div>
+            <div class="work-showcase four">
+               <img src="male_pic2.jpg" alt="">
+            </div>
+            <div class="work-showcase five">
+               <img src="male_pic2.jpg" alt="">
+            </div>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -215,7 +220,7 @@
             header.classList.toggle('sticky', window.scrollY > 0);
         });
 
-        function toogleMenu(){
+        function toggleMenu(){
             var menuToggle = document.querySelector('.toggle');
             var menu = document.querySelector('.menu');
             menuToggle.classList.toggle('active');
@@ -225,6 +230,14 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var typed = new Typed(".auto-input", {
+            strings: ["Web Development", "UI & UX Design", "Freelancing", "Brand Marketing", "Design & Coding", "Graphic Design"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+    <script>
+        var typed = new Typed(".text-input", {
             strings: ["Web Development", "UI & UX Design", "Freelancing", "Brand Marketing", "Design & Coding", "Graphic Design"],
             typeSpeed: 100,
             backSpeed: 60,
