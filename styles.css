@@ -174,6 +174,7 @@ header.sticky ul li a{
     border-radius: 20px;
     overflow: hidden;
     margin: 10px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
 }
 .container .serviceBox .icon{
     position: absolute;
@@ -181,7 +182,10 @@ header.sticky ul li a{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #143774;
+    /* background: #143774; */
+    background-image: url("male_pic2.jpg");
+    background-position: center;
+    background-size: co ;
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -202,7 +206,7 @@ header.sticky ul li a{
     color: #fff;
     transition: 0.5s;
 }
-.container .serviceBox:hover .icon /*ion.icon*/{
+.container .serviceBox:hover .icon /*ion.icon*/{ 
     font-size: 2em;
 }
 .container .serviceBox .contents{
@@ -238,7 +242,7 @@ header.sticky ul li a{
     color: #fff;
     padding: 7px 10px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: pointer; 
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s eas;
@@ -249,34 +253,70 @@ header.sticky ul li a{
     transition: .5s;
 }
 
-/*work-showcase styling*/
-.testimonials{
+/*service styling*/
+
+.container-service{
     width: 1200px;
-    margin: 100px auto;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-.work-showcase{
-   background: #1792d2;
-   border-radius: 10px;
-   padding: 30px;
-   margin-bottom: 10px;
+.container-service .container-box{
+    position: relative;
+    width: 320px;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
 }
-.one{
-    grid-column: 1/3;
+.container-service .container-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #143774;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
 }
-.four{
-    grid-column: 2/4;
-    grid-row: 2;
+.container-service .container-box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
 }
-.five{
-    grid-column: 4;
-    grid-row: 1/3;
+.container-service .container-box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
 }
-.work-showcase img{
-    object-fit: contain;
+.container-service .container-box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+}
+.container-service .container-box h3{
+    position: relative;
+    z-index: 2;
+    color: #555;
+    transition: 0.5s;
+}
+.container-service .container-box p {
+    position: relative;
+    font-size: 1em;
+    z-index: 2;
+    color: #333;
+    transition: 0.5s;
+}
+.container-service .container-box:hover h3,
+.container-service .container-box:hover p {
+    color: #fff;
 }
 
 /*contact styling*/
@@ -465,10 +505,15 @@ header.sticky ul li a{
     .container .serviceBox {
         width: fit-content;
     }
-   /*  .serviceBox{
-        margin: 10px;
-    } */
     .contactInfo{
         margin: 20px 0;
+    }
+    .container-service {
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .container-service .container-box {
+        width: fit-content;
     }
 }
