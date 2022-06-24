@@ -256,7 +256,8 @@ header.sticky ul li a{
 /*service styling*/
 
 .container-service{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
