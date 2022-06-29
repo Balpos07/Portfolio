@@ -158,6 +158,9 @@ header.sticky ul li a{
     font-size: 24px;
     margin-bottom: 10px;
 }
+.content-para {
+    line-height: 30px;
+} 
 .w50{
     min-width: 50%;
 }
@@ -248,7 +251,7 @@ header.sticky ul li a{
 }
 .container .serviceBox .contents p{
     font-weight: 200;
-    line-height: 1em;
+    line-height: 30px;
     text-align: justify;
 }
 .scroll-button{
@@ -329,6 +332,7 @@ header.sticky ul li a{
 .container-service .container-box p {
     position: relative;
     font-size: 1em;
+    line-height: 30px;
     z-index: 2;
     color: #333;
     transition: 0.5s;
