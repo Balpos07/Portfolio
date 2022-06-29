@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap'); */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Helvetica,
+        Arial,
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
     scroll-behavior: smooth;
 }
 section{
@@ -23,25 +32,25 @@ section{
 .banner h2{
     font-size: 2em;
     color: #143774;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 2em;
     animation-delay: 0.5s;
 }
 .banner h2 span{
     font-size: 2em;
-    font-weight: 700;
+    font-weight: 500;
     animation-delay: 1s;
 }
 .banner h3{
     margin-top: 10px;
     font-size: 1.5em;
     color: #143774;
-    font-weight: 500;
+    font-weight: 400;
     animation-delay: 1.5s;
 }
 .banner h3 .auto-input{
     color: #1792d2;
-    font-weight: 700;
+    font-weight: 600;
 }
 .text-input{
     color: #143774;
@@ -58,7 +67,7 @@ section{
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 400;
     animation-delay: 2s;
 }
 .btn:hover{
@@ -111,12 +120,14 @@ header ul li a{
     color: #143774;
     text-decoration: none;
     transition: 0.3s ease;
+    font-weight: 500;
 }
 header ul li a:hover{
     color: #1792d2;
 }
 header.sticky ul li a{
     color: #fff;
+    font-weight: 500;
 }
 
 /*About us styling*/
@@ -236,7 +247,7 @@ header.sticky ul li a{
     margin-bottom: 3px;
 }
 .container .serviceBox .contents p{
-    font-weight: 100;
+    font-weight: 200;
     line-height: 1em;
     text-align: justify;
 }
@@ -299,7 +310,7 @@ header.sticky ul li a{
     left: 40px;
     top: 60px;
     font-size: 4em;
-    font-weight: 800;
+    font-weight: 700;
     z-index: 1;
     opacity: 0.1;
     transition: 0.5s;
@@ -401,7 +412,7 @@ header.sticky ul li a{
     font-weight: 300;
 }
 .contactInfoBx .box .text h3{
-    font-weight: 500;
+    font-weight: 400;
     color: #1792d2;
     margin-bottom: 0;
 }
