@@ -204,9 +204,94 @@ header.sticky ul li a{
     width: 100%;
     height: 100%;
     /* background: #143774; */
+    background-image: url("counter-app.png");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox .icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #143774; */
+    background-image: url("movie-app.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox .icon3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #143774; */
+    background-image: url("web-design.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox .icon4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #143774; */
+    background-image: url("todo-list.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox .icon5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #143774; */
     background-image: url("male_pic2.jpg");
     background-position: center;
-    background-size: co ;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox .icon6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #143774; */
+    background-image: url("movie-app.jpg");
+    background-position: center;
+    background-size: cover;
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -222,14 +307,14 @@ header.sticky ul li a{
     border-radius: 50%;
     transition-delay: 0s;
 }
-.container .serviceBox .icon ion.icon{
+/* .container .serviceBox .icon ion.icon{
     font-size: 5em;
     color: #fff;
     transition: 0.5s;
 }
 .container .serviceBox:hover .icon ion.icon{ 
     font-size: 3em;
-}
+} */
 .container .serviceBox .contents{
     position: relative;
     padding: 20px;
