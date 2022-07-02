@@ -25,28 +25,33 @@ section{
     background-size: cover;
     background-position: right;
     object-fit: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: auto;
+    text-align: center;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+}
+.banner .textBx{
+    margin-top: 100px;
 }
 .banner h2{
-    font-size: 2em;
+    font-size: 3em;
     color: #143774;
     font-weight: 800;
     line-height: 2em;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 .banner h2 span{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 .banner h3{
     margin-top: 10px;
     font-size: 1.5em;
     color: #143774;
     font-weight: 400;
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 .banner h3 .auto-input{
     color: #1792d2;
@@ -68,6 +73,7 @@ section{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 400;
+    animation: forwards;
     animation-delay: 2s;
 }
 .btn:hover{
@@ -129,6 +135,9 @@ header.sticky ul li a{
     color: #fff;
     font-weight: 500;
 }
+header.sticky ul li a:hover{
+    color: #1792d2;
+}
 
 /*About us styling*/
 
@@ -159,7 +168,7 @@ header.sticky ul li a{
     margin-bottom: 10px;
 }
 .content-para {
-    line-height: 30px;
+    line-height: 26px;
 } 
 .w50{
     min-width: 50%;
@@ -336,7 +345,7 @@ header.sticky ul li a{
 }
 .container .serviceBox .contents p{
     font-weight: 200;
-    line-height: 30px;
+    line-height: 25px;
     text-align: justify;
 }
 .scroll-button{
@@ -417,7 +426,7 @@ header.sticky ul li a{
 .container-service .container-box p {
     position: relative;
     font-size: 1em;
-    line-height: 30px;
+    line-height: 25px;
     z-index: 2;
     color: #333;
     transition: 0.5s;
@@ -472,6 +481,10 @@ header.sticky ul li a{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.formBx form input[type="submit"]:hover {
+    background: #1792d2;
+    color: #f8f8f8;
+}
 .contactInfo{
     min-width: 40%;
 }
@@ -480,12 +493,12 @@ header.sticky ul li a{
 }
 .contactInfoBx .box{
     position: relative;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
 }
 .contactInfoBx .box .icon{
     min-width: 40px;
-    padding-top: 4px;
+    padding-top: 5px;
     color: #143774;
     display: flex;
     justify-content: center;
@@ -516,7 +529,7 @@ header.sticky ul li a{
 .anim{
     opacity: 0;
     transform: translateY(30px);
-    animation: moveup 0.5s linear forwards;
+    animation: moveup 1s linear forwards;
 }
 @keyframes moveup{
     100%{
@@ -544,7 +557,7 @@ header.sticky ul li a{
         text-align: center;
         width: 100%; 
         height: 100vh;
-        background: #fff;
+        background: #333;
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
@@ -560,20 +573,20 @@ header.sticky ul li a{
     .toggle{
         width: 40px;
         height: 40px;
-        background: url(menu\ bar.png);
+        background-image: url("menu\ bar.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
     }
-    .toggle .active{
-        background: url(close\ icon.png);
+    .toggle.active{
+        background-image: url("close\ icon.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
         cursor: pointer;
     }
-    header .sticky .toggle{
+    header.sticky .toggle{
         filter: invert(1);
     }
     section{
