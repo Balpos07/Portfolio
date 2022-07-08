@@ -15,13 +15,19 @@
         "Segoe UI Symbol";
     scroll-behavior: smooth;
 }
+:root{
+    --dark-blue: #143774;
+    --light-blue: #1792d2;
+    --white: #ffffff;
+    --gray: #f8f8f8;
+}
 section{
     padding: 100px;
 }
 .banner{
     position: relative;
     min-height: 100vh;
-    background: #f8f8f8;
+    background: var(--gray);
     background-size: cover;
     background-position: right;
     object-fit: cover;
@@ -36,7 +42,7 @@ section{
 }
 .banner h2{
     font-size: 3em;
-    color: #143774;
+    color: var(--dark-blue);
     font-weight: 800;
     line-height: 2em;
     animation-delay: 1s;
@@ -49,23 +55,23 @@ section{
 .banner h3{
     margin-top: 10px;
     font-size: 1.5em;
-    color: #143774;
+    color: var(--dark-blue);
     font-weight: 400;
     animation-delay: 2s;
 }
 .banner h3 .auto-input{
-    color: #1792d2;
+    color: var(--light-blue);
     font-weight: 600;
 }
 .text-input{
-    color: #143774;
+    color: var(--dark-blue);
     font-weight: 700;
 }
 .btn{
     position: relative;
-    background: #1792d2;
+    background: var(--light-blue);
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     margin-top: 20px;
     padding: 10px 30px;
     font-size: 18px;
@@ -77,8 +83,8 @@ section{
     animation-delay: 2s;
 }
 .btn:hover{
-    background: #143774;
-    color: #f8f8f8;
+    background: var(--dark-blue);
+    color: var(--white);
 }
 
 /*header styling section*/
@@ -96,12 +102,12 @@ header{
     transition: 0.5s;
 }
 header.sticky{
-    background: #143774;
+    background: var(--dark-blue);
     padding: 20px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 header .logo{
-    color: #143774;
+    color: var(--dark-blue);
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -109,7 +115,7 @@ header .logo{
     letter-spacing: 2px;
 }
 header.sticky .logo{
-    color: #fff;
+    color: var(--white);
 }
 header ul{
     position: relative;
@@ -123,20 +129,20 @@ header ul li a{
     position: relative;
     display: inline-block;
     margin: 0 15px;
-    color: #143774;
+    color: var(--dark-blue);
     text-decoration: none;
     transition: 0.3s ease;
     font-weight: 500;
 }
 header ul li a:hover{
-    color: #1792d2;
+    color: var(--light-blue);
 }
 header.sticky ul li a{
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
 }
 header.sticky ul li a:hover{
-    color: #1792d2;
+    color: var(--light-blue);
 }
 
 /*About us styling*/
@@ -148,12 +154,12 @@ header.sticky ul li a:hover{
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
-    color: #f8f8f8;
+    color: var(--gray);
 }
 .heading h2{
     font-weight: 600;
     font-size: 30px;
-    color: #143774;
+    color: var(--dark-blue);
 }
 .content{
     display: flex;
@@ -200,7 +206,7 @@ header.sticky ul li a:hover{
     position: relative;
     width: 450px;
     height: 350px;
-    background: #1792d2;
+    background: var(--light-blue);
     border-radius: 20px;
     overflow: hidden;
     margin: 10px;
@@ -327,7 +333,7 @@ header.sticky ul li a:hover{
 .container .serviceBox .contents{
     position: relative;
     padding: 20px;
-    color: #fff;
+    color: var(--white);
     text-align: center;
     margin-top: 100px;
     z-index: 1;
@@ -353,8 +359,8 @@ header.sticky ul li a:hover{
     bottom: 40px;
     right: 40px;
     font-size: 45px;
-    background: #143774;
-    color: #fff;
+    background: var(--dark-blue);
+    color: var(--white);
     padding: 7px 10px;
     border-radius: 50%;
     cursor: pointer; 
@@ -363,8 +369,8 @@ header.sticky ul li a:hover{
     transition: opacity .3s eas;
 }
 .scroll-button:hover{
-    background: #f8f8f8;
-    color: #143774;
+    background: var(--gray);
+    color: var(--dark-blue);
     transition: .5s;
 }
 
@@ -380,7 +386,7 @@ header.sticky ul li a:hover{
 .container-service .container-box{
     position: relative;
     width: 320px;
-    background: #fff;
+    background: var(--white);
     padding: 100px 40px 60px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
@@ -392,7 +398,7 @@ header.sticky ul li a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #143774;
+    background: var(--dark-blue);
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
@@ -414,7 +420,7 @@ header.sticky ul li a:hover{
 }
 .container-service .container-box:hover h2{
     opacity: 1;
-    color: #fff;
+    color: var(--white);
     transform: translateY(-40px);
 }
 .container-service .container-box h3{
@@ -433,13 +439,13 @@ header.sticky ul li a:hover{
 }
 .container-service .container-box:hover h3,
 .container-service .container-box:hover p {
-    color: #fff;
+    color: var(--white);
 }
 
 /*contact styling*/
 
 .contact{
-    background: #f8f8f8;
+    background: var(--gray);
 }
 .formBx{
     min-width: 60%;
@@ -450,7 +456,7 @@ header.sticky ul li a:hover{
 }
 .formBx form h3,
 .contactInfo h3{
-    color: #143774;
+    color: var(--dark-blue);
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
@@ -463,8 +469,8 @@ header.sticky ul li a:hover{
     background: transparent;
     border: none;
     outline: none;
-    background: #1792d2;
-    color: #fff;
+    background: var(--light-blue);
+    color: var(--white);
     resize: none;
 }
 .formBx form textarea{
@@ -472,18 +478,22 @@ header.sticky ul li a:hover{
 }
 .formBx form input::placeholder,
 .formBx form textarea::placeholder{
-    color: #f8f8f8;
+    color: var(--gray);
 }
+/* .formBx form input:focus{
+    color: green;
+    background-color: red;
+} */
 .formBx form input[type="submit"] {
     max-width: 100px;
-    background: #143774;
+    background: var(--dark-blue);
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 .formBx form input[type="submit"]:hover {
     background: #1792d2;
-    color: #f8f8f8;
+    color: var(--gray);
 }
 .contactInfo{
     min-width: 40%;
@@ -499,7 +509,7 @@ header.sticky ul li a:hover{
 .contactInfoBx .box .icon{
     min-width: 40px;
     padding-top: 5px;
-    color: #143774;
+    color: var(--dark-blue);
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -509,18 +519,18 @@ header.sticky ul li a:hover{
     display: flex;
     margin-left: 20px;
     font-size: 16px;
-    color: #143774;
+    color: var(--dark-blue);
     flex-direction: column;
     font-weight: 300;
 }
 .contactInfoBx .box .text h3{
     font-weight: 400;
-    color: #1792d2;
+    color: var(--light-blue);
     margin-bottom: 0;
 }
 .copyright{
-    background: #f8f8f8;
-    color: #143774;
+    background: var(--gray);
+    color: var(--dark-blue);
     text-align: left;
     padding: 10px;
 }
@@ -542,6 +552,8 @@ header.sticky ul li a:hover{
 
 /*Responsiveness*/
 
+
+
 @media (max-width: 991px){
     header,
     header.sticky{
@@ -557,7 +569,7 @@ header.sticky ul li a:hover{
         text-align: center;
         width: 100%; 
         height: 100vh;
-        background: #333;
+        background: var(--dark-blue);
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
@@ -566,7 +578,7 @@ header.sticky ul li a:hover{
         left: 0;
     }
     header ul li a{
-        color: #143774;
+        color: var(--white);
         font-size: 24px;
         margin: 10px;
     }
