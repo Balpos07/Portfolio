@@ -13,6 +13,8 @@
         "Apple Color Emoji",
         "Segoe UI Emoji",
         "Segoe UI Symbol";
+}
+html{
     scroll-behavior: smooth;
 }
 :root{
@@ -535,6 +537,20 @@ header.sticky ul li a:hover{
     padding: 10px;
 }
 
+.handles{
+    display: inline-block;
+    width: 50%;
+}
+.handles ion-icon{
+    margin-right: 10px;
+    font-size: 20px;
+    color: #143774;
+    transition: 0.5s ease-in-out;
+}
+.handles ion-icon:hover{
+    color: #1792d2;
+}
+
 /*Animation*/
 .anim{
     opacity: 0;
@@ -585,14 +601,14 @@ header.sticky ul li a:hover{
     .toggle{
         width: 40px;
         height: 40px;
-        background-image: url("menu\ bar.png");
+        background-image: url("Hamburger_icon.svg.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 30px;
         cursor: pointer;
     }
     .toggle.active{
-        background-image: url("close\ icon.png");
+        background-image: url("cancel_svg.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: 25px;
