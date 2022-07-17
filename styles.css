@@ -517,6 +517,11 @@ header.sticky ul li a:hover{
     align-items: flex-start;
     font-size: 24px;
 }
+.icon ion-icon{
+    margin: 5px auto;
+    color: #1792d2;
+    font-size: 25px;
+}
 .contactInfoBx .box .text{
     display: flex;
     margin-left: 20px;
@@ -536,6 +541,8 @@ header.sticky ul li a:hover{
     text-align: left;
     padding: 10px;
 }
+
+/*Handles styling*/
 
 .handles{
     display: inline-block;
