@@ -14,7 +14,7 @@ function validateName() {
     nameError.innerHTML = "Write full name";
     return false;
   }
-  nameError.innerHTML = "Valid";
+  nameError.innerHTML = '<ion-icon name="checkmark-circle-outline"></ion-icon>';
   return true;
 }
 
@@ -50,7 +50,8 @@ function validateEmail() {
     return false;
   }
 
-  emailError.innerHTML = "Valid";
+  emailError.innerHTML =
+    '<ion-icon name="checkmark-circle-outline"></ion-icon>';
   return true;
 }
 
@@ -64,7 +65,8 @@ function validateMessage() {
     return false;
   }
 
-  messageError.innerHTML = "Valid";
+  messageError.innerHTML =
+    '<ion-icon name="checkmark-circle-outline"></ion-icon>';
   return true;
 }
 
