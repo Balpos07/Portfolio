@@ -83,10 +83,12 @@ section{
     font-weight: 400;
     animation: forwards;
     animation-delay: 2s;
+    transition: 0.5s;
 }
 .btn:hover{
     background: var(--dark-blue);
     color: var(--white);
+    border-radius: 20px;
 }
 
 /*header styling section*/
@@ -393,6 +395,9 @@ header.sticky ul li a:hover{
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
     margin-bottom: 20px;
 }
+.container-service .container-box:hover{
+    border-radius: 50px;
+}
 .container-service .container-box:before{
     content: '';
     position: absolute;
@@ -409,6 +414,7 @@ header.sticky ul li a:hover{
     transform: scaleY(1);
     transform-origin: bottom;
     transition: transform 0.5s;
+    border-radius: 50px;
 }
 .container-service .container-box h2{
     position: absolute;
@@ -515,10 +521,12 @@ header.sticky ul li a:hover{
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: 0.5s;
 }
 .formBx form input[type="submit"]:hover {
     background: #1792d2;
     color: var(--gray);
+    border-radius: 20px;
 }
 .contactInfo{
     min-width: 40%;
