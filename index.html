@@ -175,8 +175,6 @@
                     eligendi repellat voluptate mollitia tenetur deleniti minima error sunt!</p>
             </div>
         </div>
-
-       
     </section>
 
     <section class="contact" id="contact">
@@ -233,10 +231,23 @@
             <div class="formBx">
                 <form>
                     <h3>Message Me</h3>
-                    <input type="text" name="" placeholder="Full Name">
-                    <input type="email" name="" placeholder="Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <input type="submit" value="Send">
+                    <div class="input-group">
+                        <input type="text" name="" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="" placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Your Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+
+                    <input type="submit" value="Send" onclick="return validateForm()">
+                    <span id="submit-error"></span>
+                    
+                   
                 </form>
             </div>
         </div>
@@ -246,6 +257,8 @@
     <div class="copyright">
         <p>Copyright &copy; 2022 WrestleA. All Right Reserved</p>
     </div>
+
+    <script src="script.js"></script>
 
     <script>
         window.addEventListener('scroll', function () {

@@ -455,6 +455,21 @@ header.sticky ul li a:hover{
 .formBx form{
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+.input-group span {
+    position: absolute;
+    top: 15px;
+    bottom: 12px;
+    right: 17px;
+    font-size: 14px;
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+#submit-error{
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 14px;
 }
 .formBx form h3,
 .contactInfo h3{
@@ -463,11 +478,16 @@ header.sticky ul li a:hover{
     font-weight: 500;
     margin-bottom: 10px;
 }
+.formBx .input-group{
+    position: relative;
+    width: 100%;
+}
 .formBx form input,
 .formBx form textarea{
+    width: 100%;
     margin-bottom: 20px;
     padding: 15px;
-    font-size: 16px;
+    font-size: 16px; 
     background: transparent;
     border: none;
     outline: none;
