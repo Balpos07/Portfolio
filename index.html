@@ -230,18 +230,18 @@
                 </div>
             </div>
             <div class="formBx">
-                <form>
+                <form id="contactForm">
                     <h3>Message Me</h3>
                     <div class="input-group">
-                        <input type="text" name="" placeholder="Full Name" id="contact-name" onkeyup="validateName()">
+                        <input type="text" name="" placeholder="Full Name" id="contact-name name" onkeyup="validateName()">
                         <span id="name-error"></span>
                     </div>
                     <div class="input-group">
-                        <input type="email" name="" placeholder="Email" id="contact-email" onkeyup="validateEmail()">
+                        <input type="email" name="" placeholder="Email" id="contact-email email" onkeyup="validateEmail()">
                         <span id="email-error"></span>
                     </div>
                     <div class="input-group">
-                        <textarea placeholder="Your Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                        <textarea placeholder="Your Message" id="contact-message message" onkeyup="validateMessage()"></textarea>
                         <span id="message-error"></span>
                     </div>
 
@@ -260,6 +260,7 @@
     </div>
 
     <script src="script.js"></script>
+    <script src="script2.js"></script>
 
     <script>
         window.addEventListener('scroll', function () {
