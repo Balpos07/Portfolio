@@ -659,6 +659,7 @@ header.sticky ul li a:hover{
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0,0,0,0.2);
+        border-radius: 0px 0px 500px 0px;
     }
     .menu.active{
         left: 0;
