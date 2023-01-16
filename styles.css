@@ -52,7 +52,7 @@ section{
     align-items: center; */
 }
 .banner .textBx{
-    margin-top: 100px;
+    margin-top: 130px;
 }
 .banner h2{
     font-size: 3em;
@@ -202,18 +202,32 @@ header.sticky ul li a:hover{
 /*scroll snap styling*/
 
 .items div{
-    padding: 60px 20px;
+   /*  padding: 60px 20px;
     text-align: center;
     background-color: #143774;
     color: var(--white);
     border-radius: 20px;
     min-width: 250px;
+    scroll-snap-align: start; */
+
+    /* position: relative; */
+    min-width: 250px;
+    background-color: #143774;
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
     scroll-snap-align: start;
 }
 
 .items{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
+   /*  width: 100%;
+    max-width: 1200px; */
     overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
