@@ -256,7 +256,7 @@ header.sticky ul li a:hover{
     position: relative;
     width: 320px;
     background: var(--light-blue);
-    border-radius: 0px 100px 0px 100px;
+    /* border-radius: 0px 100px 0px 100px; */
     overflow: hidden;
     margin: 10px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
